@@ -2,7 +2,7 @@
 
 namespace AssetsBundle\AssetFile\AssetFileFilter;
 
-abstract class AbstractAssetFileFilter extends \Zend\Stdlib\AbstractOptions implements \ AssetsBundle\AssetFile\AssetFileFilter\AssetFileFilterInterface
+abstract class AbstractAssetFileFilter extends \Zend\Stdlib\AbstractOptions implements \AssetsBundle\AssetFile\AssetFileFilter\AssetFileFilterInterface
 {
 
     /**

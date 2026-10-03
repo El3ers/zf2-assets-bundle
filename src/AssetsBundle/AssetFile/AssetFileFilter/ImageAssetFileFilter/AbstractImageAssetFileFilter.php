@@ -31,9 +31,9 @@ abstract class AbstractImageAssetFileFilter extends \AssetsBundle\AssetFile\Asse
      */
     public function filterAssetFile(\AssetsBundle\AssetFile\AssetFile $oAssetFile) {
         //If asset file should not be optimize, return current content
-        if (!$this->assetFileShouldBeOptimize($oAssetFile)) {
+       // if (!$this->assetFileShouldBeOptimize($oAssetFile)) {
             return $oAssetFile->getAssetFileContents();
-        }
+       // }
         //Optimize image
         \Zend\Stdlib\ErrorHandler::start();
         $oImage = imagecreatefromstring($oAssetFile->getAssetFileContents());
